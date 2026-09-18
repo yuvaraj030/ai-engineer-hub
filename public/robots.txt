@@ -8,4 +8,4 @@ Allow: /
 Disallow: /search
 
 # Sitemap location
-Sitemap: https://aiengineer.hub/sitemap.xml
+Sitemap: https://ai-engineer-hub-tau.vercel.app/sitemap.xml

@@ -16,7 +16,7 @@ interface SEOHeadProps {
 }
 
 const SITE_NAME = 'AI Engineer Hub';
-const SITE_URL = 'https://aiengineer.hub'; // placeholder — update with real domain
+const SITE_URL = 'https://ai-engineer-hub-tau.vercel.app';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
 
 export default function SEOHead({

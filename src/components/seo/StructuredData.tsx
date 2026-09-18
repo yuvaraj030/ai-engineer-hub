@@ -16,13 +16,13 @@ export function websiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'AI Engineer Hub',
-    url: 'https://aiengineer.hub',
+    url: 'https://ai-engineer-hub-tau.vercel.app',
     description: 'Practical beginner-friendly tutorials on AI, Python, local AI, Ollama, AI tools and remote work.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://aiengineer.hub/search?q={search_term_string}',
+        urlTemplate: 'https://ai-engineer-hub-tau.vercel.app/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -34,8 +34,8 @@ export function organizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'AI Engineer Hub',
-    url: 'https://aiengineer.hub',
-    logo: 'https://aiengineer.hub/favicon.svg',
+    url: 'https://ai-engineer-hub-tau.vercel.app',
+    logo: 'https://ai-engineer-hub-tau.vercel.app/favicon.svg',
     sameAs: [
       'https://twitter.com/aiengineerh',
       'https://github.com/aiengineerh',
@@ -65,7 +65,7 @@ export function articleSchema({
     '@type': 'Article',
     headline: title,
     description,
-    url: `https://aiengineer.hub/articles/${slug}`,
+    url: `https://ai-engineer-hub-tau.vercel.app/articles/${slug}`,
     datePublished: publishedDate,
     dateModified: updatedDate || publishedDate,
     author: {
@@ -77,7 +77,7 @@ export function articleSchema({
       name: 'AI Engineer Hub',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://aiengineer.hub/favicon.svg',
+        url: 'https://ai-engineer-hub-tau.vercel.app/favicon.svg',
       },
     },
     ...(imageUrl && {

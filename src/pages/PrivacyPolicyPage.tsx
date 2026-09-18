@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-sm text-gray-500 mb-8">Last updated: September 2026</p>
 
           <p>
-            AI Engineer Hub ("we," "us," or "our") operates the website aiengineer.hub. This Privacy Policy
+            AI Engineer Hub ("we," "us," or "our") operates the website ai-engineer-hub-tau.vercel.app. This Privacy Policy
             explains how we collect, use, and protect information when you visit our website.
           </p>
 

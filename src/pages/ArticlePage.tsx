@@ -43,7 +43,7 @@ export default function ArticlePage() {
   const category = getCategory(article.category);
   const author = getAuthor(article.author);
   const related = getRelatedArticles(article);
-  const fullUrl = `https://aiengineer.hub/articles/${article.slug}`;
+  const fullUrl = `https://ai-engineer-hub-tau.vercel.app/articles/${article.slug}`;
 
   // Build TOC
   const tocItems: TocItem[] = article.content
@@ -61,8 +61,8 @@ export default function ArticlePage() {
 
   // Breadcrumb schema
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://aiengineer.hub/' },
-    ...(category ? [{ name: category.name, url: `https://aiengineer.hub/${category.slug}` }] : []),
+    { name: 'Home', url: 'https://ai-engineer-hub-tau.vercel.app/' },
+    ...(category ? [{ name: category.name, url: `https://ai-engineer-hub-tau.vercel.app/${category.slug}` }] : []),
     { name: article.title, url: fullUrl },
   ];
 
