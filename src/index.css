@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-700 font-semibold px-5 py-2.5 rounded-lg border border-brand-200 transition-colors duration-150;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium transition-colors duration-150;
+  }
+  .card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden;
+  }
+  .badge {
+    @apply inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .prose-article {
+    @apply text-gray-700 leading-relaxed;
+  }
+  .prose-article h2 {
+    @apply text-2xl font-bold text-gray-900 mt-10 mb-4;
+  }
+  .prose-article h3 {
+    @apply text-xl font-semibold text-gray-900 mt-8 mb-3;
+  }
+  .prose-article p {
+    @apply mb-5;
+  }
+  .prose-article ul {
+    @apply list-disc list-inside space-y-1.5 mb-5 pl-2;
+  }
+  .prose-article ol {
+    @apply list-decimal list-inside space-y-1.5 mb-5 pl-2;
+  }
+  .prose-article li {
+    @apply text-gray-700;
+  }
+  .prose-article blockquote {
+    @apply border-l-4 border-brand-300 bg-brand-50 rounded-r-lg px-5 py-4 my-6 text-gray-700 italic;
+  }
+  .prose-article table {
+    @apply w-full border-collapse mb-6 text-sm;
+  }
+  .prose-article th {
+    @apply bg-gray-50 text-gray-700 font-semibold px-4 py-3 text-left border border-gray-200;
+  }
+  .prose-article td {
+    @apply px-4 py-3 border border-gray-200 text-gray-700;
+  }
+  .prose-article tr:hover td {
+    @apply bg-gray-50;
+  }
+}

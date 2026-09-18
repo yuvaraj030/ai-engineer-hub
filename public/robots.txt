@@ -1,0 +1,11 @@
+# robots.txt for AI Engineer Hub
+# Allow normal search engine crawling
+
+User-agent: *
+Allow: /
+
+# Do not index search results or admin pages
+Disallow: /search
+
+# Sitemap location
+Sitemap: https://aiengineer.hub/sitemap.xml
